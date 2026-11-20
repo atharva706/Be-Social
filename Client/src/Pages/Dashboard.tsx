@@ -82,8 +82,8 @@ function Dashboard() {
         {statCards.map((card) => (
           <div
             key={card.label}
-            className="bg-white hover:bg-red-200 relative border border-slate-200 rounded-2xl p-5
-             hover:border-red-200 transition-all"
+            className="bg-white hover:bg-indigo-200 relative border border-slate-200 rounded-2xl p-5
+             hover:border-indigo-200 transition-all"
           >
             <div className="flex items-center justify-between mb-4">
               <div>{card.value}</div>

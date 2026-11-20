@@ -69,18 +69,18 @@ const Sidebar = ({
               onClick={() => setIsOpen(false)}
               className={`flex items-center gap-3 px-3 py-2.5 rounded text-sm transition-all duration-150 border ${
                 isActive
-                  ? "bg-red-50 text-red-600 border-red-100"
+                  ? "bg-indigo-50 text-indigo-600 border-indigo-100"
                   : "text-slate-500 hover:bg-slate-50 border-transparent hover:text-slate-700"
               }`}
             >
               <item.icon
-                className={`size-4.5 shrink-0 ${isActive ? "text-red-500" : "text-slate-500"}`}
+                className={`size-4.5 shrink-0 ${isActive ? "text-indigo-500" : "text-slate-500"}`}
               />
               {item.name}
               {isActive && (
                 <span
                   className="ml-auto w-[5px] h-5 rounded-full
-              bg-red-500"
+              bg-indigo-500"
                 />
               )}
             </NavLink>
@@ -91,7 +91,7 @@ const Sidebar = ({
       {/* User Footer */}
       <div className="p-4 border-t border-slate-100">
         <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors">
-          <div className="size-8 rounded-full bg-linear-to-br from-red-400 to-pink-400 flex items-center justify-center text-white text-sm font-medium shrink-0">
+          <div className="size-8 rounded-full bg-linear-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white text-sm font-medium shrink-0">
             {user?.name.charAt(0).toUpperCase() || "U"}
           </div>
 
@@ -101,7 +101,7 @@ const Sidebar = ({
           </div>
         </div>
         <button
-          className="mt-1 flex items-center gap-2 px-3 w-full rounded-text-sm text-slate-500 hover:bg-red-50 hover:text-red-500 transition-all duration-150"
+          className="mt-1 flex items-center gap-2 px-3 w-full rounded-text-sm text-slate-500 hover:bg-indigo-50 hover:text-indigo-500 transition-all duration-150"
           onClick={logout}
         >
           <LogOutIcon className="size-4" />

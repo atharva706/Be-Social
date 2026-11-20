@@ -52,7 +52,7 @@ const Accounts = () => {
           onClick={() => {
             setShowPlatformPicker(true);
           }}
-          className="flex w-full items-center justify-center gap-2 rounded-full bg-red-500 px-5 py-2.5 font-medium text-white transition-all hover:bg-red-600 sm:w-auto"
+          className="flex w-full items-center justify-center gap-2 rounded-full bg-indigo-500 px-5 py-2.5 font-medium text-white transition-all hover:bg-indigo-600 sm:w-auto"
         >
           <PlusIcon className="size-4" /> Connect Account
         </button>

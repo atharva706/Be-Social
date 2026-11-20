@@ -48,14 +48,14 @@ const PlatformPickerModal = ({
                 {/* Icon */}
                 <div>
                   <P.icon
-                    className={`size-5 ${isConnected ? "text-red-600" : "text-slate-600"}`}
+                    className={`size-5 ${isConnected ? "text-indigo-600" : "text-slate-600"}`}
                   />
                 </div>
 
                 {/* Label */}
                 <div className="min-w-0 flex-1">
                   <div
-                    className={`text-sm ${isConnected ? "text-red-700" : "text-slate-800"}`}
+                    className={`text-sm ${isConnected ? "text-indigo-700" : "text-slate-800"}`}
                   >
                     {P.name}
                   </div>
@@ -67,11 +67,11 @@ const PlatformPickerModal = ({
 
                 {/* Status */}
                 {isConnected && (
-                  <CheckCircleIcon className="size-4 shrink-0 text-red-500" />
+                  <CheckCircleIcon className="size-4 shrink-0 text-indigo-500" />
                 )}
 
                 {isConnecting && (
-                  <div className="size-4 shrink-0 animate-spin rounded-full border-2 border-red-600 border-t-transparent" />
+                  <div className="size-4 shrink-0 animate-spin rounded-full border-2 border-indigo-600 border-t-transparent" />
                 )}
 
                 {!isConnected && !isConnecting && (
