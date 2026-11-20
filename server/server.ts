@@ -5,6 +5,8 @@ import connectDB from "./config/db.js";
 
 const app = express();
 
+// starts
+
 // database connection
 await connectDB();
 
