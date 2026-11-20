@@ -72,7 +72,7 @@ const Scheduler = () => {
                         onClick={() => togglePlatform(p.id)}
                         key={p.id}
                         type="button"
-                        className={`flex items-center gap-1.5 p-3 rounded-md border transition-all duration-150 ${active ? "bg-red-50 border-red-300 text-red-500 scale-105" : "border-slate-200 text-slate-500 hover:border-slate-300"}`}
+                        className={`flex items-center gap-1.5 p-3 rounded-md border transition-all duration-150 ${active ? "bg-indigo-50 border-indigo-300 text-indigo-500 scale-105" : "border-slate-200 text-slate-500 hover:border-slate-300"}`}
                       >
                         <p.icon className="size-4.5" />
                       </button>
@@ -99,7 +99,7 @@ const Scheduler = () => {
                 onChange={(e) => setContent(e.target.value)}
               />
               <div
-                className={`text-right text-xs mt-1 font-medium ${content.length > 270 ? "text-red-500" : "text-slate-400"}`}
+                className={`text-right text-xs mt-1 font-medium ${content.length > 270 ? "text-indigo-500" : "text-slate-400"}`}
               >
                 {content.length}/280
               </div>
@@ -135,8 +135,8 @@ const Scheduler = () => {
                   </button>
                 </div>
               ) : (
-                <label className="flex items-center justify-center gap-2 p-5 py-10 border-2 border-dashed border-slate-200 rounded-xl cursor-pointer hover:border-red-300 hover:bg-red-50/30 transition-all group">
-                  <span className="text-sm text-slate-600 group-hover:text-red-600 transition-colors">
+                <label className="flex items-center justify-center gap-2 p-5 py-10 border-2 border-dashed border-slate-200 rounded-xl cursor-pointer hover:border-indigo-300 hover:bg-indigo-50/30 transition-all group">
+                  <span className="text-sm text-slate-600 group-hover:text-indigo-600 transition-colors">
                     Click to upload image and video
                   </span>
 
@@ -197,7 +197,7 @@ const Scheduler = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 py-3.5 bg-red-500 hover:bg-red-600 transition-all text-white rounded-lg"
+              className="w-full flex items-center justify-center gap-2 py-3.5 bg-indigo-500 hover:bg-indigo-600 transition-all text-white rounded-lg"
             >
               {loading ? (
                 <>

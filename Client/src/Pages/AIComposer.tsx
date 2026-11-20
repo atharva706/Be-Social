@@ -76,12 +76,12 @@ const AIComposer = () => {
               onClick={() => {
                 setGenereteImage(!generateImage);
               }}
-              className="flex items-center gap-3 bg-red-50 py-2 px-3 rounded-lg"
+              className="flex items-center gap-3 bg-indigo-50 py-2 px-3 rounded-lg"
             >
               <span>AI Image</span>
 
               <div
-                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out focus:outline-none ${generateImage ? "bg-red-500" : "bg-slate-200"}`}
+                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out focus:outline-none ${generateImage ? "bg-indigo-500" : "bg-slate-200"}`}
               >
                 <span
                   className={`pointer-events-none size-4 transform translate-y-0.5 rounded-full bg-white transition ${generateImage ? "translate-x-4" : "translate-x-0.5"}`}
@@ -113,7 +113,7 @@ const AIComposer = () => {
             <button
               key={t}
               onClick={() => setTone(t)}
-              className={`px-4 py-1.5 rounded-full text-sm transition-all border ${tone === t ? "bg-red-500 border-red-500 text-white" : "bg-white border-slate-200 text-slate-500 hover:border-slate-300"}`}
+              className={`px-4 py-1.5 rounded-full text-sm transition-all border ${tone === t ? "bg-indigo-500 border-indigo-500 text-white" : "bg-white border-slate-200 text-slate-500 hover:border-slate-300"}`}
             >
               {t}
             </button>
@@ -138,7 +138,7 @@ const AIComposer = () => {
           {generations.map((gen) => (
             <div
               key={gen._id}
-              className=" group bg-white rounded-2xl border border-slate-100 p-5 hover:border-red-200 transition-all relative"
+              className=" group bg-white rounded-2xl border border-slate-100 p-5 hover:border-indigo-200 transition-all relative"
             >
               <div className="flex flex-col h-full space-y-4">
                 <div className="flex items-center justify-between">
@@ -146,7 +146,7 @@ const AIComposer = () => {
                     {new Date(gen.createdAt).toLocaleString()}
                   </span>
 
-                  <span className="text-xs text-red-500 bg-red-50 px-2 py-0.5 rounded-md">
+                  <span className="text-xs text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-md">
                     {gen.tone}
                   </span>
                 </div>
@@ -164,7 +164,7 @@ const AIComposer = () => {
                 <div className="flex items-center gap-2 pt-2">
                   <button
                     onClick={() => setActiveScheduler(gen)}
-                    className="flex-1 bg-slate-100 hover:bg-red-500 hover:text-white text-slate-600 text-xs py-2.5 rounded-lg transition-all"
+                    className="flex-1 bg-slate-100 hover:bg-indigo-500 hover:text-white text-slate-600 text-xs py-2.5 rounded-lg transition-all"
                   >
                     Schedule Post
                   </button>
@@ -245,7 +245,7 @@ const AIComposer = () => {
                                 : [...prev, p.id],
                             )
                           }
-                          className={`p-2.5 rounded-md border text-xs ${active ? "bg-red-500/80 text-white" : "bg-white border-slate-200 text-slate-400 hover:border-slate-300"}`}
+                          className={`p-2.5 rounded-md border text-xs ${active ? "bg-indigo-500/80 text-white" : "bg-white border-slate-200 text-slate-400 hover:border-slate-300"}`}
                         >
                           <p.icon className="size-4.5" />
                         </button>
@@ -279,7 +279,7 @@ const AIComposer = () => {
 
               <button
                 onClick={handleSchedule}
-                className="w-full flex items-center justify-center gap-2 py-3 rounded-md bg-slate-200 text-slate-700 hover:bg-red-500 hover:text-white transition"
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-md bg-slate-200 text-slate-700 hover:bg-indigo-500 hover:text-white transition"
               >
                 {scheduling ? (
                   <Loader2Icon className="size-4 animate-spin" />
