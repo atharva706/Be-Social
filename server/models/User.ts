@@ -7,4 +7,4 @@ const userSchema = new mongoose.Schema({
     zernioProfileId : {type : String}
 } ,{timestamps: true});
 
-export const User = mongoose.model('User' , userSchema)
+export const User = mongoose.model('User' , userSchema )
