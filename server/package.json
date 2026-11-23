@@ -13,6 +13,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@google/genai": "^3.6.1",
     "@types/bcrypt": "^6.0.0",
     "@zernio/node": "^0.2.1728",
     "bcrypt": "^6.0.0",
