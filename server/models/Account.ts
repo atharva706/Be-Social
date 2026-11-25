@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { platform } from "node:os";
 
 const accountSchema = new mongoose.Schema({
     user: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
@@ -13,4 +12,4 @@ const accountSchema = new mongoose.Schema({
     avatarUrl: { type: String },
 }, { timestamps: true })
 
-export const Account = mongoose.model("Account" , accountSchema);
+export const Account = mongoose.model("Account", accountSchema);
